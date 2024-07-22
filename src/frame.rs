@@ -10,7 +10,7 @@ use crate::IdHeader;
 #[repr(C)]
 pub struct CanFrame {
     pub(crate) id_header: IdHeader,
-    pub(crate) dlc: DLC,
+    pub dlc: DLC,
     pub(crate) data: [u8; 8],
 }
 
